@@ -66,8 +66,11 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 ### 4.3 Modelado de datos
 ![](4.3.png)
 ### 4.4 Fundamentos y base de datos de Apex
+![](4.4.png)
 ### 4.5 Desencadenadores de Apex
+![](4.5.png)
 ### 4.6 Apex Integration Services
+![](4.6.png)
 
 ***
 ## 5. Definiciones y Diagramas
