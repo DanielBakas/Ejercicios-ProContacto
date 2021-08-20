@@ -162,15 +162,24 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 
 ***
 ## 6. Actividades sobre el Playground
+Desarrollar un trigger para que cuando un usuario Modifica o Crea un contacto de Salesforce completando el campo generado el punto B con el ID del punto A, se invoque al Web Service con el idprocontacto obtenga los datos de email de la respuesta y actualice el campo email del contacto. Usar Playground 1. 
+
+Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json
 
 ***
 ## 7. Cuestionario de Salesforce
 ### 7.1. Soluciones
-- ¿Qué es Salesforce?
-- ¿Qué es Sales Cloud?
-- ¿Qué es Service Cloud?
-- ¿Qué es Health Cloud?
-- ¿Qué es Marketing Cloud?
+- **¿Qué es Salesforce?**
+  - Salesforce es una solución de gestión de relaciones con clientes que une empresas y clientes. Es una plataforma CRM integrada que brinda a todos tus departamentos, incluidos marketing, ventas, comercio y servicios, una vista única y compartida de cada cliente.
+- **¿Qué es Sales Cloud?**
+  - Sales Cloud es un software de ventas y CRM en la nube, de la plataforma de Salesforce diseñado para volver más eficientes los procesos de ventas al centralizar la información de clientes, registrar sus interacciones con la organización y automatizar muchos de los procesos que los agentes de ventas realizan diariamente. 
+- **¿Qué es Service Cloud?**
+  - Service Cloud es un software de automatización de procesos de servicio en la nube, de la plataforma de Salesforce. Algunas de sus funciones son automatizar los procesos de servicio, agilizar los flujos de trabajo y sacar a la luz artículos, temas y expertos clave para transformar la experiencia del agente, conectar con cada cliente de forma individual, a través de múltiples canales y en cualquier dispositivo, y más. 
+- **¿Qué es Health Cloud?**
+  - Salesforce Health Cloud es un software de relación con  pacientes en la nube, de la plataforma de Salesforce. Proporciona una visión completa del paciente, una gestión más inteligente del mismo y una experiencia de compromiso conectada con el paciente. Con Health Cloud, los equipos asistenciales tienen fácil acceso a los datos clínicos y no clínicos de los pacientes y miembros, incluyendo las condiciones de salud y medicamentos actuales, el historial de citas, las preferencias de comunicación y los datos de la HCE y otros sistemas. Los equipos son capaces de trabajar de forma más inteligente en todos los grupos de pacientes y miembros para proporcionar una atención inteligente más rápidamente.
+- **¿Qué es Marketing Cloud?**
+  - Marketing Cloud es un software de publicidad y mercadeo en la nube, de la plataforma de Salesforce. Permite ofrecer recorridos relevantes y personalizados en todos los canales y dispositivos, permitiendo a los profesionales del marketing ofrecer el mensaje adecuado en el momento oportuno en todas las fases de la relación. Marketing Cloud incluye soluciones integradas para la gestión de la experiencia del cliente, el correo electrónico, los dispositivos móviles, las redes sociales, la personalización web, la publicidad, la creación y gestión de contenidos y el análisis de datos.
+  
 ### 7.2. Funcionalidades
 - ¿Qué es un RecordType?
 - ¿Qué es un ReportType?
@@ -210,3 +219,6 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 - Códigos de estado de respuesta HTTP - HTTP | MDN. (2021). Recuperado Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Web/HTTP/Status
 - What is JSON. (2021). Recuperado Agosto 20, 2021, de https://www.w3schools.com/whatis/whatis_json.asp
 - Introducción a XML - XML: Extensible Markup Language | MDN. (2021). Recuperado de August 20, 2021, de https://developer.mozilla.org/es/docs/Web/XML/XML_introduction
+- ¿Qué es Salesforce? | Salesforce. (2021). Retrieved 20 August 2021, from https://www.salesforce.com/mx/products/what-is-salesforce/
+- Sales Cloud Lightning: Frequently asked questions (FAQ). (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/sales-cloud/faq/#:~:text=Sales%20Cloud%20is%20a%20cloud,tasks%20salespeople%20do%20every%20day.
+- Health Cloud FAQ. (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/health-cloud/faq/
