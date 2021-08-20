@@ -9,7 +9,7 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
     - [1.1. Entorno de Desarrollo Integrado (IDE)](#11-entorno-de-desarrollo-integrado-ide)
     - [1.2. Herramienta de Control de Versiones (Git y Git Bash)](#12-herramienta-de-control-de-versiones-git-y-git-bash)
   - [2. Cuestionario de Protocolo ```HTTP```](#2-cuestionario-de-protocolo-http)
-  - [3. ```POST```MAN](#3-postman)
+  - [3. POSTMAN](#3-postman)
     - [3.1. ```GET``` Request Inicial](#31-get-request-inicial)
     - [3.2. ```POST``` Request con Body](#32-post-request-con-body)
     - [3.3. ```GET``` Request Final](#33-get-request-final)
@@ -118,7 +118,7 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
   - Para especificar la estructura de datos del cuerpo (body) de datos que se está enviando en una solicitud ```HTTP```.
 
 ***
-## 3. ```POST```MAN
+## 3. POSTMAN
 ### 3.1. ```GET``` Request Inicial
 ![](img/3.1.png)
 ### 3.2. ```POST``` Request con Body
@@ -182,7 +182,13 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
   
 ### 7.2. Funcionalidades
 - ¿Qué es un RecordType?
+  - Son objetos estándar de la biblioteca de objetos de Salesforce que permiten establecer diferentes procesos de negocio, valores de listas de selección y diseños de página para diferentes usuarios basados en un cierto perfil.
 - ¿Qué es un ReportType?
+  - En Salesforce, un objeto de tipo ReportType actúa como una plantilla para generar reportes (listas de datos generadas a partir de criterios predefinidos). Existen 4 tipos:
+    - Tabulares
+    - Matriciales
+    - Resumen
+    - Conjuntos
 - ¿Qué es un Page Layout?
 - ¿Qué es un Compact Layout?
 - ¿Qué es un Perfil?
@@ -196,6 +202,7 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
 - ¿Para qué sirve la funcionalidad Web to Case?
 - ¿Para qué sirve la funcionalidad Omnichannel?
 - ¿Para qué sirve la funcionalidad Chatter?
+
 ### 7.3. Conceptos generales
 - ¿Qué significa SaaS? ¿Salesforce es Saas?
 - ¿Qué significa que una solución sea Cloud?
