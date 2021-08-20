@@ -181,27 +181,41 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
   - Marketing Cloud es un software de publicidad y mercadeo en la nube, de la plataforma de Salesforce. Permite ofrecer recorridos relevantes y personalizados en todos los canales y dispositivos, permitiendo a los profesionales del marketing ofrecer el mensaje adecuado en el momento oportuno en todas las fases de la relación. Marketing Cloud incluye soluciones integradas para la gestión de la experiencia del cliente, el correo electrónico, los dispositivos móviles, las redes sociales, la personalización web, la publicidad, la creación y gestión de contenidos y el análisis de datos.
   
 ### 7.2. Funcionalidades
-- ¿Qué es un RecordType?
+- **¿Qué es un RecordType?**
   - Son objetos estándar de la biblioteca de objetos de Salesforce que permiten establecer diferentes procesos de negocio, valores de listas de selección y diseños de página para diferentes usuarios basados en un cierto perfil.
-- ¿Qué es un ReportType?
+- **¿Qué es un ReportType?**
   - En Salesforce, un objeto de tipo ReportType actúa como una plantilla para generar reportes (listas de datos generadas a partir de criterios predefinidos). Existen 4 tipos:
     - Tabulares
     - Matriciales
     - Resumen
     - Conjuntos
-- ¿Qué es un Page Layout?
-- ¿Qué es un Compact Layout?
-- ¿Qué es un Perfil?
-- ¿Qué es un Rol?
-- ¿Qué es un Validation Rule?
-- ¿Qué diferencia hay entre una relación Master Detail y Lookup?
-- ¿Qué es un Sandbox?
-- ¿Qué es un ChangeSet?
-- ¿Para qué sirve el import Wizard de Salesforce?
-- ¿Para qué sirve la funcionalidad Web to Lead?
+- **¿Qué es un Page Layout?**
+  - Son objetos estándar de la biblioteca de objetos de Salesforce que permiten personalizar el diseño y la organización de las páginas de detalle y edición de los registros en Salesforce.
+- **¿Qué es un Compact Layout?**
+  - Se utilizan en Salesforce1 para mostrar los campos clave de un registro de un vistazo. Los Compact Layouts están diseñados para ver los registros en dispositivos móviles con pantalla táctil, donde el espacio es limitado y el reconocimiento rápido de los registros es importante.
+- **¿Qué es un Perfil?**
+  - Es un grupo o colección de configuraciones y permisos que definen lo que un usuario puede hacer en Salesforce.
+- **¿Qué es un Rol?**
+  -  En Salesforce, los roles se definen para aumentar la visibilidad de los datos que tiene un usuario concreto. La visibilidad de los datos puede aumentarse utilizando reglas de compartición o creando una jerarquía de roles. La jerarquía de roles permite que el usuario situado en un nivel superior tenga acceso a los registros que pertenecen a los usuarios con roles inferiores en la jerarquía.
+- **¿Qué es un Validation Rule?**
+  - Verifican que los datos introducidos por los usuarios en los registros cumplen las normas que se especifican antes de que puedan guardarlos.
+- **¿Qué diferencia hay entre una relación Master Detail y Lookup?**
+  - En relación Master Detail el maestro representa al padre y el detalle al hijo. Si el padre se elimina, el hijo también se elimina. Los campos de resumen de rollup sólo pueden ser creados en los registros maestros que calcularán la suma, el promedio y el mínimo de los registros hijos.
+  - A diferencia de la relación Master Detail, la relación Lookup no tiene una relación jerárquica y sirve únicamente para enlazar dos recursos de forma que sea más sencillo acceder a uno desde el otro.
+- **¿Qué es un Sandbox?**
+  - Es una copia de la base de datos que se puede utilizar para probar nuevas ideas en un entorno de desarrollo dónde los errores no van a perjudicar a un entorno de producción.
+- **¿Qué es un ChangeSet?**
+  - Se utilizan para enviar personalizaciones de una organización de Salesforce a otra. Por ejemplo, se puede crear y probar un nuevo objeto en una org. de Sandbox, y luego se puede enviar a una org. de producción utilizando un ChangeSet. Los ChangeSets sólo pueden contener modificaciones que se puedan realizar a través del menú Configuración. Por ejemplo, no puede utilizar un ChangeSet para cargar una lista de registros de contactos. Los ChangeSets contienen información sobre la organización. No contienen datos, como los registros.
+- **¿Para qué sirve el import Wizard de Salesforce?**
+  - Para cargar datos en Salesforce de forma eficiente. Utilizando este asistente se puede insertar, actualizar y reinsertar hasta 50.000 registros. Sin embargo, no permite cargar registros duplicados. Con este asistente se pueden cargar cuentas, contactos, clientes potenciales, soluciones y objetos personalizados.
+- **¿Para qué sirve la funcionalidad Web to Lead?**
+  - Sirve para utilizar un formulario del sitio web, capturar la información del visitante y almacenar esa información como un nuevo cliente potencial en Salesforce.
 - ¿Para qué sirve la funcionalidad Web to Case?
-- ¿Para qué sirve la funcionalidad Omnichannel?
+  - Ofrece a los usuarios una forma de recopilar información en un formato más específico. Se puede recopilar solicitudes de asistencia al cliente directamente desde el sitio Web de una empresa.
+- **¿Para qué sirve la funcionalidad Omnichannel?**
+  - Es una herramienta que se encuentra dentro de la consola de ventas (Sales Cloud) o de servicios (Service Cloud) y que, una vez activada y configurada, envía automáticamente el trabajo correspondiente a usuarios en tiempo real.
 - ¿Para qué sirve la funcionalidad Chatter?
+  - Es una aplicación de colaboración en tiempo real de Salesforce que permite a sus usuarios trabajar juntos, hablar entre ellos y compartir información. Chatter permite a los usuarios colaborar en oportunidades de ventas, casos de servicio, campañas y proyectos con aplicaciones integradas y acciones personalizadas.
 
 ### 7.3. Conceptos generales
 - ¿Qué significa SaaS? ¿Salesforce es Saas?
@@ -229,3 +243,5 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
 - ¿Qué es Salesforce? | Salesforce. (2021). Retrieved 20 August 2021, from https://www.salesforce.com/mx/products/what-is-salesforce/
 - Sales Cloud Lightning: Frequently asked questions (FAQ). (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/sales-cloud/faq/#:~:text=Sales%20Cloud%20is%20a%20cloud,tasks%20salespeople%20do%20every%20day.
 - Health Cloud FAQ. (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/health-cloud/faq/
+- DeveloperForce. (2021). Recuperado Agosto 20, 2021, de https://developer.salesforce.com/forums/?id=906F0000000BXZBIA4
+- Help And Training Community. (2021). Recuperado Agosto 20, 2021, de https://help.salesforce.com/s/articleView?id=sf.changesets.htm&type=5
