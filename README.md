@@ -21,7 +21,9 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
     - [4.4 Fundamentos y base de datos de Apex](#44-fundamentos-y-base-de-datos-de-apex)
     - [4.5 Desencadenadores de Apex](#45-desencadenadores-de-apex)
     - [4.6 Apex Integration Services](#46-apex-integration-services)
-  - [5. Definiciones y Diagramas](#5-definiciones-y-diagramas)
+  - [5. Objetos y Relaciones](#5-objetos-y-relaciones)
+    - [5.1. Definiciones de Objetos](#51-definiciones-de-objetos)
+    - [5.2. Diagrama de Relaciones](#52-diagrama-de-relaciones)
   - [6. Actividades sobre el Playground](#6-actividades-sobre-el-playground)
   - [7. Cuestionario de Salesforce](#7-cuestionario-de-salesforce)
     - [7.1. Soluciones](#71-soluciones)
@@ -143,7 +145,8 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 ![](img/4.6.png)
 
 ***
-## 5. Definiciones y Diagramas
+## 5. Objetos y Relaciones
+### 5.1. Definiciones de Objetos
 - Lead
 - Account
 - Contact
@@ -154,6 +157,8 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 - Asset
 - Case
 - Article
+### 5.2. Diagrama de Relaciones
+
 
 ***
 ## 6. Actividades sobre el Playground
