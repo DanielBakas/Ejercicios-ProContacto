@@ -147,17 +147,22 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 ***
 ## 5. Objetos y Relaciones
 ### 5.1. Definiciones de Objetos
-- Lead
-- Account
-- Contact
-- Opportunity
-- Product
-- PriceBook
-- Quote
-- Asset
-- Case
-- Article
+- **Lead**: Es un potencial cliente que demostró interés en un producto o servicio ofrecido por la marca a través de la interacción con contenidos y otros materiales. Además de ser una oportunidad de negocio, el lead es un recurso valioso en cualquier estratégia de marketing, pudiendo tornarse tanto un cliente como un abogado de la marca.
+- **Account**: Representa una cuenta individual, que es una organización o persona involucrada con su negocio (como clientes, competidores y socios).
+- **Contact**: Representa un contacto, que es una persona asociada a una cuenta.
+- **Opportunity**: Representa una oportunidad de venta o una transacción pendiente.
+- **Product**: Representa un objeto a la venta.
+- **PriceBook**: Representa un libro de precios que contiene la lista de productos que una organización vende.
+- **Quote**: Representa una cotización, es decir, un registro que muestra los precios propuestos para productos y servicios. Los presupuestos pueden crearse y sincronizarse con las oportunidades, y enviarse por correo electrónico en formato PDF a los clientes.
+- **Asset**: Representa un artículo de valor comercial, como un producto vendido por su empresa o por un competidor, que un cliente ha comprado e instalado.
+- **Case**: Representa un caso, es decir, un inconveniente o problema relacionado a un cliente.
+- **Article**: Como tal no existe un objeto Article, pero existen:
+  - **CaseArticle**: Representa la asociación entre un caso y un artículo de conocimiento.
+  - **KnowledgeArticle**: Proporciona acceso de sólo lectura a un artículo y la posibilidad de eliminar el artículo maestro.
+  - **LinkedArticle**: Representa un artículo de conocimiento que se adjunta a una orden de trabajo, una partida de orden de trabajo o un tipo de trabajo.
+
 ### 5.2. Diagrama de Relaciones
+![](img/5.2.png)
 
 
 ***
@@ -165,6 +170,8 @@ Este documento contiene la solución de los diversos ejercicios planteados por l
 Desarrollar un trigger para que cuando un usuario Modifica o Crea un contacto de Salesforce completando el campo generado el punto B con el ID del punto A, se invoque al Web Service con el idprocontacto obtenga los datos de email de la respuesta y actualice el campo email del contacto. Usar Playground 1. 
 
 Para consultar un contacto en particular se puede agregar al ID al final de la URL como en este ejemplo: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts/-Ma6nC5l7n2nVal2zCyR.json
+
+![](img/6.png)
 
 ***
 ## 7. Cuestionario de Salesforce
@@ -218,20 +225,36 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
   - Es una aplicación de colaboración en tiempo real de Salesforce que permite a sus usuarios trabajar juntos, hablar entre ellos y compartir información. Chatter permite a los usuarios colaborar en oportunidades de ventas, casos de servicio, campañas y proyectos con aplicaciones integradas y acciones personalizadas.
 
 ### 7.3. Conceptos generales
-- ¿Qué significa SaaS? ¿Salesforce es Saas?
-- ¿Qué significa que una solución sea Cloud?
-- ¿Qué significa que una solución sea On-Premise?
-- ¿Qué es un pipeline de ventas?
-- ¿Qué es un funnel de ventas?
-- ¿Qué significa Customer Experience?
-- ¿Qué significa omnicanalidad?
-- ¿Qué significa que un negocio sea B2B?
-- ¿Qué significa que un negocio sea B2C?
-- ¿Qué es un KPI?
-- ¿Qué es una API y en qué se diferencia de una Rest API?
-- ¿Qué es un Proceso Batch?
-- ¿Qué es Kanban?
-- ¿Qué es un ERP? ¿Salesforce es un ERP?
+- **¿Qué significa SaaS?**
+  - El software como servicio (o SaaS) es una forma de suministrar aplicaciones a través de Internet, como un servicio. En lugar de instalar y mantener el software, simplemente se accede a él a través de Internet, liberándose de la compleja gestión de software y hardware.
+- ¿Salesforce es Saas?
+  - No. Salesforce se considera una Plataforma como servicio (PaaS).
+- **¿Qué significa que una solución sea Cloud?**
+  - Que el procesamiento y desarrollo de las soluciones de software se realiza en servidores remotos con acceso universal, también llamado procesamiento en la nube o "cloud".
+- **¿Qué significa que una solución sea On-Premise?**
+  - Una arquitectura On Premise se basa en que la empresa tenga sus propios servidores físicos en su lugar de trabajo, a diferencia de la nube o "cloud".
+- **¿Qué es un pipeline de ventas?**
+  - Pipeline de ventas es el mapa de las actividades diarias que componen el proceso de ventas en el trabajo de un representante comercial, mostrando cada una de las etapas de una negociación.
+- **¿Qué es un funnel de ventas?**
+  - También conocido como embudo de ventas, es una metáfora usada en mercadotecnia o administración de empresas para referirse a las fases de la venta. Es el proceso por el que las oportunidades potenciales de ventas son cualificadas y seleccionadas para convertirlas en oportunidades reales que terminan en transacciones reales.​
+- **¿Qué significa Customer Experience?**
+  - El Customer Experience o Experiencia de Cliente es “el recuerdo que se genera en la mente del consumidor como consecuencia de su relación con la marca”. La Experiencia de Cliente corresponde a la relación de la marca con el cliente antes, durante y después de la compra.
+- **¿Qué significa omnicanalidad?**
+  - Significa usar una variedad de canales para comunicarse con la audiencia. En los tiempos actuales los canales se multiplican mientras las preferencias de los consumidores y los hábitos de gasto continúan moviéndose en línea. Por tanto, para llegar al público objetivo, se debe adaptar a un canal elegido expresamente.
+- **¿Qué significa que un negocio sea B2B?**
+  - Negocio a negocio (Business to Business) hace referencia a las transacciones comerciales entre empresas, es decir, a aquellas que típicamente se establecen entre un fabricante y el distribuidor de un producto, o entre un distribuidor y un comercio minorista.
+- **¿Qué significa que un negocio sea B2C?**
+  - Empresa a Consumidor (Business to consumer) se refiere al modelo de negocio en el que las transacciones de bienes o la prestación de servicios se produce entre empresa y cliente o consumidor final. Si bien se aplica al negocio directo al consumidor, se ha asociado con el comercio online.
+- **¿Qué es un KPI?**
+  - Un KPI, conocido también como indicador clave o medidor de desempeño o indicador clave de rendimiento, es una medida del nivel del rendimiento de un proceso. El valor del indicador está directamente relacionado con un objetivo fijado previamente y normalmente se expresa en valores porcentuales.​
+- **¿Qué es una API y en qué se diferencia de una Rest API?**
+  - Una API es un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones. API significa interfaz de programación de aplicaciones. Las API permiten que sus productos y servicios se comuniquen con otros, sin necesidad de saber cómo están implementados.
+- **¿Qué es un Proceso Batch?**
+  - Un sistema por lotes, o modo batch, se refiere a la ejecución de un programa sin el control o supervisión directa del usuario que se denomina. Este tipo de programas se caracterizan porque su ejecución no precisa ningún tipo de interacción con el usuario.
+- **¿Qué es Kanban?**
+  - Kanban, cuyo significado es letrero o tarjeta en japonés, ​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas.
+- **¿Qué es un ERP? ¿Salesforce es un ERP?**
+  - Se refiere al tipo de software que usan las organizaciones para administrar las actividades empresariales diarias, como la contabilidad, el abastecimiento, la administración de proyectos, el cumplimiento y la gestión de riesgos y las operaciones de la cadena de suministro. Una suite ERP completa también incluye enterprise performance management, software que ayuda a planificar, presupuestar, predecir e informar sobre los resultados financieros de una organización.
 
 ## 8. Referencias
 - Que es un servidor WEB? - Aprende sobre desarrollo web | MDN. (2021). Recuperado Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_a_web_server
@@ -239,9 +262,15 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
 - Mensajes HTTP - HTTP | MDN. (2021). Recuperado Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Web/HTTP/Messages
 - Códigos de estado de respuesta HTTP - HTTP | MDN. (2021). Recuperado Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Web/HTTP/Status
 - What is JSON. (2021). Recuperado Agosto 20, 2021, de https://www.w3schools.com/whatis/whatis_json.asp
-- Introducción a XML - XML: Extensible Markup Language | MDN. (2021). Recuperado de August 20, 2021, de https://developer.mozilla.org/es/docs/Web/XML/XML_introduction
-- ¿Qué es Salesforce? | Salesforce. (2021). Retrieved 20 August 2021, from https://www.salesforce.com/mx/products/what-is-salesforce/
+- Introducción a XML - XML: Extensible Markup Language | MDN. (2021). Recuperado de Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Web/XML/XML_introduction
+- ¿Qué es Salesforce? | Salesforce. (2021). Recuperado 20 Agosto 2021, de https://www.salesforce.com/mx/products/what-is-salesforce/
 - Sales Cloud Lightning: Frequently asked questions (FAQ). (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/sales-cloud/faq/#:~:text=Sales%20Cloud%20is%20a%20cloud,tasks%20salespeople%20do%20every%20day.
 - Health Cloud FAQ. (2021). Recuperado Agosto 20, 2021, de https://www.salesforce.com/products/health-cloud/faq/
 - DeveloperForce. (2021). Recuperado Agosto 20, 2021, de https://developer.salesforce.com/forums/?id=906F0000000BXZBIA4
 - Help And Training Community. (2021). Recuperado Agosto 20, 2021, de https://help.salesforce.com/s/articleView?id=sf.changesets.htm&type=5
+- Salesforce Developers. (2021). Agosto 20, 2021, de https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_casearticle.htm
+- Station, R. (2020). Pipeline de ventas: qué es y cómo montar uno en tu empresa. Recuperado Agosto 21, 2021, de https://www.rdstation.com/co/blog/pipeline-de-ventas/#:~:text=Pipeline%20de%20ventas%20es%20el,hasta%20el%20cierre%20del%20negocio.
+- ¿Qué es el Customer Experience? - Asociación DEC. (2019). Recuperado Agosto 21, 2021, de https://asociaciondec.org/blog-dec/que-es-el-customer-experience/38130/
+- B2C, ¿Qué es? | Clavei. (2021). Recuperado Agosto 21, 2021, de https://www.clavei.es/que-es/b2c/#:~:text=B2C%20o%20business%20to%20consumer,asociado%20con%20el%20comercio%20online.
+- Qué es Kanban: Definición, Características y Ventajas. (2021). Recuperado Agosto 21, 2021, de https://kanbanize.com/es/recursos-de-kanban/primeros-pasos/que-es-kanban
+- ¿Qué es ERP? | Oracle México. (2021). Recuperado Agosto 21, 2021, from https://www.oracle.com/mx/erp/what-is-erp/
