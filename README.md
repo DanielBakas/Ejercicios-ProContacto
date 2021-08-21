@@ -253,8 +253,10 @@ Para consultar un contacto en particular se puede agregar al ID al final de la U
   - Un sistema por lotes, o modo batch, se refiere a la ejecución de un programa sin el control o supervisión directa del usuario que se denomina. Este tipo de programas se caracterizan porque su ejecución no precisa ningún tipo de interacción con el usuario.
 - **¿Qué es Kanban?**
   - Kanban, cuyo significado es letrero o tarjeta en japonés, ​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas.
-- **¿Qué es un ERP? ¿Salesforce es un ERP?**
+- **¿Qué es un ERP?**
   - Se refiere al tipo de software que usan las organizaciones para administrar las actividades empresariales diarias, como la contabilidad, el abastecimiento, la administración de proyectos, el cumplimiento y la gestión de riesgos y las operaciones de la cadena de suministro. Una suite ERP completa también incluye enterprise performance management, software que ayuda a planificar, presupuestar, predecir e informar sobre los resultados financieros de una organización.
+- **¿Salesforce es un ERP?**
+  - No. Salesforce no es un sistema ERP porque no maneja datos transaccionales. Puede acceder al historial de pedidos o a las facturas, pero esos datos se introducen a través de una integración con el sistema ERP.
 
 ## 8. Referencias
 - Que es un servidor WEB? - Aprende sobre desarrollo web | MDN. (2021). Recuperado Agosto 20, 2021, de https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_a_web_server
